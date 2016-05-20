@@ -10,7 +10,8 @@
 
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    'primeng':                    'node_modules/primeng'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -18,6 +19,7 @@
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
+    'primeng':                    { defaultExtension: 'js' }
   };
 
   var ngPackageNames = [
@@ -46,6 +48,10 @@
     map: map,
     packages: packages
   }
+  
+  // "if" stmt used in the ngPrime quickStart, but not in Angular 2 Quick Start
+  // filterSystemConfig - index.html's chance to modify config before we register it.
+  if (global.filterSystemConfig) { global.filterSystemConfig(config); }
 
   System.config(config);
 
