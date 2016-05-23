@@ -208,7 +208,8 @@ create your own repo
 </html>
 ```
 
-### Import desired directives (example InputText) to app/app.component.ts
+### Import desired ngPrime directives to app/app.component.ts
+(example: InputText) 
 ```typescript
     import {InputText} from 'primeng/primeng';
     <h1>My First App using PrimeNG QuickStart and Angular 2 QuickStart</h1>
@@ -221,7 +222,6 @@ create your own repo
  ```typescript
 import {Component} from '@angular/core';
 import {InputText} from 'primeng/primeng';
-
 
 @Component({
     selector: 'my-app',
