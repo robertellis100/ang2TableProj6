@@ -13,9 +13,11 @@ create your own repo
  edit files to add ngPrime based on [Setup](http://www.primefaces.org/primeng/#/setup)
 
 ### Add the following depencies to package.json
- +    "es6-shim": "^0.35.0",
- +    "primeng": "1.0.0-beta.5",
- +    "primeui": "4.1.10"
+ ```json
+     "es6-shim": "^0.35.0",
+     "primeng": "1.0.0-beta.5",
+     "primeui": "4.1.10"
+```
  
 #### package.json
 ```json
@@ -87,8 +89,10 @@ create your own repo
 }
 ```
 ### Add the following code to systemjs.config.js for map and packages:
-+ 'primeng':                    'node_modules/primeng'
-+ 'primeng':                    { defaultExtension: 'js' }
+```javascript
+ 'primeng':                    'node_modules/primeng'
+ 'primeng':                    { defaultExtension: 'js' }
+```
 
 #### systemjs.config.js
 ```javascript
@@ -205,11 +209,13 @@ create your own repo
 ```
 
 ### Import desired directives (example InputText) to app/app.component.ts
- + import {InputText} from 'primeng/primeng';
- +    <h1>My First App using PrimeNG QuickStart and Angular 2 QuickStart</h1>
- +    <input type="text" pInputText/>
- +    `,
- +    directives: [InputText]
+```typescript
+    import {InputText} from 'primeng/primeng';
+    <h1>My First App using PrimeNG QuickStart and Angular 2 QuickStart</h1>
+    <input type="text" pInputText/>
+    `,
+    directives: [InputText]
+ ```
  
  #### app/app.component.ts
  ```typescript
