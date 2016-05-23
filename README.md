@@ -10,7 +10,7 @@ rm -rf .git
 create your own repo
 
 ## Edit/Add code for ngPrime dependencies
- edit files to add ngPrime based on [url]Setup[/url](http://www.primefaces.org/primeng/#/setup)
+ edit files to add ngPrime based on [Setup](http://www.primefaces.org/primeng/#/setup)
 
 ### Add the following depencies to package.json
  +    "es6-shim": "^0.35.0",
