@@ -153,13 +153,15 @@ create your own repo
 ```
 
 ### Add the following scripts and stylesheets to index.html
- + <script>document.write('<base href="' + document.location + '" />');</script>
- +    <link rel="stylesheet" type="text/css" href="node_modules/primeui/themes/omega/theme.css" />
- +    <link rel="stylesheet" type="text/css" href="app/resources/icons/css/font-awesome.min.css" />
- +    <link rel="stylesheet" type="text/css" href="node_modules/primeui/primeui-ng-all.min.css" />
- +    <link rel="stylesheet" type="text/css" href="app/resources/css/site.css"/>
- +    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
- +    <script src="node_modules/primeui/primeui-ng-all.min.js"></script>
+```html
+   <script>document.write('<base href="' + document.location + '" />');</script>
+   <link rel="stylesheet" type="text/css" href="node_modules/primeui/themes/omega/theme.css" />
+   <link rel="stylesheet" type="text/css" href="app/resources/icons/css/font-awesome.min.css" />
+   <link rel="stylesheet" type="text/css" href="node_modules/primeui/primeui-ng-all.min.css" />
+   <link rel="stylesheet" type="text/css" href="app/resources/css/site.css"/>
+   <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+   <script src="node_modules/primeui/primeui-ng-all.min.js"></script> 
+```
  
  #### index.html
  ```html
@@ -200,10 +202,6 @@ create your own repo
     <my-app>Loading...</my-app>
   </body>
 </html>
-We have no intention of updating the source on `angular/quickstart`.
-Discard everything "git-like" by deleting the `.git` folder.
-```bash
-rm -rf .git
 ```
 
 ### Import desired directives (example InputText) to app/app.component.ts
@@ -239,7 +237,7 @@ npm install
 ```
 **Attention Windows Developers:  You must run all of these commands in administrator mode**
 
-## Run the compiler and a server at the same time, both in "watch mode"
+## Run compiler and server at same time, in "watch mode"
 ```bash
 npm start
 ```
