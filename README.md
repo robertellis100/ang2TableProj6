@@ -216,8 +216,8 @@ create your own repo
     `,
     directives: [InputText]
  ```
-  
- #### app/app.component.ts
+ 
+#### app/app.component.ts
  ```typescript
 import {Component} from '@angular/core';
 import {InputText} from 'primeng/primeng';
