@@ -166,8 +166,8 @@ create your own repo
    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
    <script src="node_modules/primeui/primeui-ng-all.min.js"></script> 
 ```
- 
- #### index.html
+
+#### index.html
  ```html
 <html>
   <head>
@@ -216,7 +216,7 @@ create your own repo
     `,
     directives: [InputText]
  ```
- 
+  
  #### app/app.component.ts
  ```typescript
 import {Component} from '@angular/core';
@@ -232,6 +232,7 @@ import {InputText} from 'primeng/primeng';
     directives: [InputText]
 })
 export class AppComponent { }
+```
 
 ### Add the resources folder with needed-fonts and css to the app folder 
 - site.css
